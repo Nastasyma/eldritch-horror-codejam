@@ -2,51 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Travel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="assets/svg/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Travel</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <div class="portal">Travel Portal</div>
-            <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item"><a href="#preview" class="nav-link">How It Works</a></li>
-                  <li class="nav-item"><a href="#steps" class="nav-link">Plan Your Trip</a></li>
-                  <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
-                  <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
-                </ul>
-              </nav>
-              <form>
-                <button class="login">Login</button>
-              </form>
+  <header class="header">
+    <div class="container header-container">
+      <div class="portal"><img src="assets/svg/portal.svg" class="portal_icon" alt="portal_icon">
+        <div class="portal_text"><b>Travel Portal</b>
         </div>
-    </header>
-    <main class="main">
-        <div class="container main-container">
-            <section class="section section-preview" id="preview">
-                <h1 class="title">Explore the beauty of the World</h1>
-            </section> 
-            <section class="section section-steps" id="steps">
-                <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
-            </section>
-            <section class="section section-destinations" id="destinations">
-                <h2 class="section-title">POPULAR DESTINATIONS</h2>
-            </section>
-            <section class="section section-stories" id="stories">
-                <h2 class="section-title">TRAVEL STORIES</h2>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container footer-container">
-
-        </div>
-    </footer>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#steps" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="#preview" class="nav-link">Plan Your Trip</a></li>
+          <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
+        </ul>
+      </nav>
+      <form>
+        <button class="login"><span class="login_text">Login</span></button>
+      </form>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container main-container">
+      <section class="section section-preview" id="preview">
+        <h1 class="title">Explore the beauty of the World</h1>
+        <div class="title_content">Recieve personalized recommendations for countries, hotels, activities and more</div>
+        <form class="plantrip">
+          <input type="text" id="plan" class="plan" placeholder="What would you like to do?">
+          <button class="btn_plan"><span class="startplan">Start Planning</span></button>
+        </form>
+      </section>
+      <section class="section section-steps" id="steps">
+        <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+      </section>
+      <section class="section section-destinations" id="destinations">
+        <h2 class="section-title">POPULAR DESTINATIONS</h2>
+      </section>
+      <section class="section section-stories" id="stories">
+        <h2 class="section-title">TRAVEL STORIES</h2>
+        <div class="story_1">
+          <h3>10 Photos of Attractive Thailand</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More</p></div>
+        <div class="story_2">
+          <h3>Canyonlands National Park, Utah</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More</p></div>
+        <div class="story_3">
+          <h3>I left my heart in the Mountains!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More</p></div>
+        <div class="story_4">
+          <h3>The Longest journey in my life!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More</p></div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+    </div>
+  </footer>
 </body>
 
 </html>
