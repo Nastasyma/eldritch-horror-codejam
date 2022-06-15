@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth; 
+  }
+
+.header {
+    background-color: rgba(242, 120, 92, 0.7);
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+  .portal {
+    color: #ffffff;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-link {
+    color: #ffffff;
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .3s;
+  }
