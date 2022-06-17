@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 1440px;
   Height: 3735px;
   font-family: 'Aleo';
   font-size: 16px;
@@ -22,6 +22,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* header */
@@ -221,14 +222,49 @@ body {
 /* section-destinations */
 
 .section-destinations {
-  padding-top: 75px;
   height: 1042px;
+  width: 2520px;
+  padding-top: 90px;
   margin: 0 auto;
+  margin-left: -550px;
+}
+
+.dest_photo {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.dest_item1 {
+  width: 800px;
+  height: 800px;
+  background: url('assets/img/destination_1.jpg') no-repeat;
+}
+
+.dest_item2 {
+  width: 800px;
+  height: 800px;
+  background: url('assets/img/destination_2.jpg') no-repeat;
+}
+
+.dest_item3 {
+  width: 800px;
+  height: 800px;
+  background: url('assets/img/destination_3.jpg') no-repeat;
+}
+
+.dest_text {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  padding: 700px 0 0 50px;
 }
 
 /* section-stories */
 
 .section-stories {
+  padding-top: 170px;
   width: 1201px;
   height: 1322px;
 }
