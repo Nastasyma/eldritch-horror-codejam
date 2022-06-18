@@ -44,14 +44,15 @@ body {
 
 .portal {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
+  width: 216px;
   font-size: 32px;
   color: #ffffff;
 }
 
 .portal_icon {
   padding-right: 10px;
+  margin-bottom: 5px;
 }
 
 .portal_text {
@@ -62,12 +63,17 @@ body {
 .login {
   width: 103px;
   height: 41px;
+  cursor: pointer;
   background-color: #0D606F;
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 2px 3px rgba(13, 96, 111, 0.16);
   font-family: 'Red Hat Text', sans-serif;
+}
+
+.login:hover {
+  background: #000000;
 }
 
 .login_text {
@@ -96,6 +102,10 @@ body {
 .nav-item {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: #a59d9d;
 }
 
 
@@ -145,6 +155,7 @@ body {
 .btn_plan {
   width: 228px;
   height: 59px;
+  cursor: pointer;
   background-color: #0D606F;
   border-radius: 10px;
   border-style: none;
@@ -152,6 +163,10 @@ body {
   0px, 0px rgba(13, 96, 111, 0.08);
   padding: 10px, 32px, 10px, 32px;
   margin: 18px;
+}
+
+.btn_plan:hover {
+  background: #f2785c;
 }
 
 .startplan {
@@ -196,6 +211,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 
 .steps_item {
   width: auto;
@@ -258,7 +274,7 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 32px;
   color: #ffffff;
-  padding: 700px 0 0 50px;
+  padding: 700px 0 0 20px;
 }
 
 .dest_bottom {
@@ -291,6 +307,7 @@ body {
   align-items: center;
   width: 228px;
   height: 59px;
+  cursor: pointer;
   background-color: #0D606F;
   border-radius: 10px;
   border-style: none;
@@ -302,6 +319,10 @@ body {
   font-size: 24px;
   color: #ffffff;
   padding-left: 20px;
+}
+
+.btn_dest:hover {
+  background: #f2785c;
 }
 
 .dest_icon {
@@ -345,6 +366,7 @@ body {
   align-items: center;
   width: 228px;
   height: 59px;
+  cursor: pointer;
   background-color: #0D606F;
   border-radius: 10px;
   border-style: none;
@@ -356,6 +378,11 @@ body {
   font-size: 24px;
   color: #ffffff;
   padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.btn_story:hover {
+  background: #f2785c;
 }
 
 .story_icon {
@@ -382,6 +409,10 @@ body {
   border-radius: 16px;
   margin-right: 40px;
   height: 250px;
+}
+
+.readmore {
+  text-decoration-line: underline;
 }
 
 
@@ -416,6 +447,7 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 16px;
   color: #ffffff;
+  padding-right: 53px;
 }
 
 .footer-link {
