@@ -6,16 +6,22 @@ html {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
 body {
-  width: 1440px;
+  width: 100%;
   font-family: 'Aleo';
   font-size: 16px;
   font-style: normal;
   line-height: 1.2;
   font-weight: normal;
   background-color: #ffffff;
-  background: top url('assets/img/header_img.jpg') no-repeat,
-   bottom url('assets/img/bottom_img.jpg') no-repeat;
+  background: top center url('assets/img/header_img.jpg') no-repeat,
+    bottom center url('assets/img/bottom_img.jpg') no-repeat;
   margin: 0 auto;
 }
 
@@ -45,19 +51,21 @@ body {
 .portal {
   display: flex;
   align-items: flex-end;
-  width: 216px;
-  font-size: 32px;
-  color: #ffffff;
+  padding-left: 10px;
+  transition: .3s;
 }
 
 .portal_icon {
-  padding-right: 10px;
-  margin-bottom: 5px;
+  padding-right: 8px;
+  padding-top: 5px;
 }
 
 .portal_text {
+  text-decoration: none;
   font-family: 'Magra', sans-serif;
   font-weight: 600;
+  font-size: 32px;
+  color: #ffffff;
 }
 
 .login {
@@ -70,10 +78,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 2px 3px rgba(13, 96, 111, 0.16);
   font-family: 'Red Hat Text', sans-serif;
+  transition: .3s;
 }
 
 .login:hover {
-  background: #000000;
+  background: #0d486f;
 }
 
 .login_text {
@@ -102,6 +111,7 @@ body {
 .nav-item {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 16px;
+  transition: .3s;
 }
 
 .nav-item a:hover {
@@ -143,6 +153,7 @@ body {
   height: 95px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.7);
+
 }
 
 .plan {
@@ -160,13 +171,14 @@ body {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px, 2px rgba(13, 96, 111, 0.16),
-  0px, 0px rgba(13, 96, 111, 0.08);
+    0px, 0px rgba(13, 96, 111, 0.08);
   padding: 10px, 32px, 10px, 32px;
   margin: 18px;
+  transition: .3s;
 }
 
 .btn_plan:hover {
-  background: #f2785c;
+  background: #0d486f;
 }
 
 .startplan {
@@ -212,12 +224,16 @@ body {
   justify-content: space-between;
 }
 
-
 .steps_item {
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.steps_item:nth-child(2) {
+  padding-left: 65px;
 }
 
 .steps_icon {
@@ -233,10 +249,11 @@ body {
   font-weight: 400;
   font-size: 20px;
   color: #0D606F;
+  padding-top: 6px;
 }
 
 /* ------------ section-destinations ------------ */
- 
+
 .section-destinations {
   height: 1042px;
   width: 2520px;
@@ -249,25 +266,27 @@ body {
 
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .dest_item1 {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_1.jpg') no-repeat;
+  margin: 15px 0 0 15px;
 }
 
 .dest_item2 {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_2.jpg') no-repeat;
+  margin: 15px 0 0 15px;
 }
 
 .dest_item3 {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_3.jpg') no-repeat;
+  margin: 15px 0 0 15px;
 }
 
 .dest_text {
@@ -312,17 +331,19 @@ body {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px, 2px rgba(13, 96, 111, 0.16),
-  0px, 0px rgba(13, 96, 111, 0.08);
-  margin-left: 500px;
+    0px, 0px rgba(13, 96, 111, 0.08);
   font-family: 'Red Hat Text', sans-serif;
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
-  padding-left: 20px;
+  margin-left: 500px;
+  margin-top: 25px;
+  padding-left: 15px;
+  transition: .3s;
 }
 
 .btn_dest:hover {
-  background: #f2785c;
+  background: #0d486f;
 }
 
 .dest_icon {
@@ -356,9 +377,9 @@ body {
   padding-top: 40px;
 }
 
-.travelstories {
+.stories_title {
   padding-bottom: 15px;
-  margin-left: 220px;
+  margin-left: 230px;
 }
 
 .btn_story {
@@ -371,7 +392,7 @@ body {
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px, 2px rgba(13, 96, 111, 0.16),
-  0px, 0px rgba(13, 96, 111, 0.08);
+    0px, 0px rgba(13, 96, 111, 0.08);
   margin-left: 600px;
   font-family: 'Red Hat Text', sans-serif;
   font-weight: 500;
@@ -379,10 +400,11 @@ body {
   color: #ffffff;
   padding-left: 20px;
   margin-bottom: 15px;
+  transition: .3s;
 }
 
 .btn_story:hover {
-  background: #f2785c;
+  background: #0d486f;
 }
 
 .story_icon {
