@@ -31,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-/* ------------ header ------------ */
+/* ------------ header start ------------ */
 
 .header-container {
   width: 1200px;
@@ -53,6 +53,7 @@ body {
   display: flex;
   align-items: flex-end;
   transition: 0.5s;
+  padding-bottom: 4px;
 }
 
 .portal:hover {
@@ -124,13 +125,12 @@ body {
   color: #a59d9d;
 }
 
+/* ------------ header end ------------ */
 
-/* ------------ main ------------ */
-
-/* ------------ section-preview ------------ */
+/* ------------ section-preview start------------ */
 
 .section-preview {
-  margin: 32px 428px 310px 120px;
+  margin: 32px 428px 309px 120px;
 }
 
 .title {
@@ -145,7 +145,7 @@ body {
   font-style: italic;
   font-size: 20px;
   color: #ffffff;
-  margin-top: 32px;
+  margin-top: 33px;
   margin-bottom: 0;
 }
 
@@ -168,6 +168,11 @@ body {
   outline: none;
   appearance: none;
   background: none;
+  font-family: 'Aleo', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  color: #F2785C;
 }
 
 .btn_plan {
@@ -217,7 +222,9 @@ body {
   text-align: center;
 }
 
-/* ------------ section-steps ------------ */
+/* ------------ section-preview end ------------ */
+
+/* ------------ section-steps start ------------ */
 
 .section-steps {
   padding-top: 5px;
@@ -260,21 +267,19 @@ body {
   font-weight: 400;
   font-size: 20px;
   color: #0D606F;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
-/* ------------ section-destinations ------------ */
+/* ------------ section-steps end ------------ */
+
+/* ------------ section-destinations start ------------ */
 
 .section-destinations {
   height: 1042px;
   width: 2520px;
   padding-top: 90px;
   margin: 0 auto;
-  margin-left: -550px;
-}
-
-.dest_title {
-  margin-left: 15px;
+  margin-left: -540px;
 }
 
 .dest_photo {
@@ -286,28 +291,28 @@ body {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_1.jpg') no-repeat;
-  margin: 15px 0 0 15px;
+  margin: 15px 28px 0 0;
 }
 
 .dest_item2 {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_2.jpg') no-repeat;
-  margin: 15px 0 0 15px;
+  margin: 15px 28px 0 28px;
 }
 
 .dest_item3 {
   width: 800px;
   height: 800px;
   background: url('assets/img/destination_3.jpg') no-repeat;
-  margin: 15px 0 0 15px;
+  margin: 15px 0 0 28px;
 }
 
 .dest_text {
   font-family: 'Red Hat Text', sans-serif;
   font-size: 32px;
   color: #ffffff;
-  padding: 690px 0 0 20px;
+  padding: 690px 0 0 15px;
 }
 
 .dest_bottom {
@@ -317,7 +322,6 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  padding-left: 20px;
 }
 
 .slider_btn {
@@ -364,19 +368,17 @@ body {
   margin: 0 12px 0 30px;
 }
 
+/* ------------ section-destinations end ------------ */
 
-/* ------------ section-stories ------------ */
+/* ------------ section-stories start ------------ */
 
 .section-stories {
-  margin-top: 201px;
-  width: 1201px;
+  margin-top: 200px;
 }
 
 .stories_bg {
   background-color: rgba(255, 255, 255, 0.7);
-  width: 1440px;
   height: 1270px;
-  padding-bottom: 61px;
 }
 
 .story {
@@ -392,7 +394,6 @@ body {
 
 .stories_title {
   padding-bottom: 15px;
-  margin-left: 240px;
 }
 
 .btn_story {
@@ -446,10 +447,16 @@ body {
 
 .readmore {
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
+.readmore:hover {
+  color: #0d202b;
+}
 
-/* ------------ footer ------------ */
+/* ------------ section-stories end ------------ */
+
+/* ------------ footer start ------------ */
 
 .footer {
   margin: 0 auto;
@@ -517,3 +524,5 @@ body {
 .my_page {
   margin-left: 124px;
 }
+
+/* ------------ footer end ------------ */
