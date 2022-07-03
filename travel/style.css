@@ -24,6 +24,16 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.body_opacity {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background:#000;
+  opacity: 0.5;
+  z-index: 9;
+}
 
 /* ------------ header start ------------ */
 
@@ -593,6 +603,9 @@ body {
 .my_page {
   margin-left: 124px;
 }
+.my_page2 {
+  display: none;
+}
 
 /* ------------ footer end ------------ */
 
@@ -604,7 +617,7 @@ body {
     width: 100%;
   }
   .title {
-    font-size: 70px;
+    font-size: 60px;
   }
   .nav-list {
     width: 420px;
@@ -616,7 +629,7 @@ body {
     font-size: 32px;
   }
   .section-preview {
-    padding: 32px 320px 190px 120px;
+    padding: 32px 320px 210px 120px;
   }
   .section-destinations {
     margin: 0;
@@ -695,6 +708,9 @@ body {
   .section-preview {
     padding: 32px 120px 350px 120px;
   }
+  .plan, ::placeholder {
+    font-size: 18px;
+  }
   .story_text {
     display: none;
   }
@@ -724,18 +740,14 @@ body {
     background: linear-gradient(to bottom,#0D606F 0%, rgba(13, 96, 111, 0) 70%);
     box-shadow: none;
   }
-  .account {
-    display: block;
-  }
-  .social_media {
+  .account, .social_media {
     display: block;
   }
   .portal {
     width: 100%;
   }
   .nav {
-    width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 165px;
@@ -746,10 +758,10 @@ body {
     margin: 0 auto;
     z-index: 10;
     transition: 1s;
-    transform: translateY(-100%);
+    transform: translateX(100%);
   }
   .open_menu {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   .nav-list {
     text-align: end;
@@ -759,7 +771,6 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-
   .nav-item {
     width: 100%;
     padding-bottom: 1px;
@@ -771,7 +782,7 @@ body {
     display: block;
     padding: 10px 0 0 10px;
   }
-  .title, .title2, .login, .login_button, .portal, .dest_item2, .dest_item3, .dest_text, .story_img, .my_page, .footer_text {
+  .title, .title2, .login, .login_button, .portal, .dest_item2, .dest_item3, .dest_text, .story_img, .footer_text {
     display: none;
   }
   .section-preview {
@@ -918,7 +929,7 @@ body {
     color: #0d606f;
     margin-top: 12px;
   }
-  .story_test_wrapp {
+  .story_text_wrapp {
     margin-top: 5px;
   }
   .story {
@@ -945,12 +956,36 @@ body {
     height: 10px;
     margin: 0 6px 0 0;
   }
+
   .footer_nav {
     margin: 0 auto;
-    padding: 15px 120px 16px 129px;
+    padding: 15px 0 16px 58px;
   }
   .img4 {
     margin-bottom: 10px;
+  }
+  .rsschool {
+    display: none;
+  }
+  .footer-link {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+  }
+  .my_page {
+    margin-left: 10px;
+  }
+  .my_page2 {
+    display: block;
+    margin-right: 10px;
+  }
+  .rsschool2 {
+    width: 60px;
+    height: 30px;
+  }
+  .rsschool2:hover {
+    position: relative;
+    bottom: 3px;
   }
 
 }
