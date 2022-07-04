@@ -10,19 +10,31 @@ const bodyOpacity = document.querySelector('.body_opacity');
     burger.addEventListener('click', () => {
         menu.classList.add('open_menu');
         bodyOpacity.style.display = bodyOpacity.style.display === 'none' ? 'block' : 'none';
+        setTimeout(function () {
+            bodyOpacity.classList.add('body_opacity_active');
+          }, 50);   
     })
     menuClose.addEventListener('click', () => {
+        setTimeout(function () {
+        bodyOpacity.classList.remove('body_opacity_active');
+          }, 50);  
         menu.classList.remove('open_menu');
         bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none';
     })
     navList.addEventListener('click', () => {
+        setTimeout(function () {
+            bodyOpacity.classList.remove('body_opacity_active');
+          }, 50);  
         menu.classList.remove('open_menu');
-        bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none';
+        bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none'; 
     })
 }());
 
 document.addEventListener('click', function(e){
     if(menu !== e.target){
+        setTimeout(function () {
+            bodyOpacity.classList.remove('body_opacity_active');
+          }, 50);  
         menu.classList.remove('open_menu');
         bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none';
     }}, true);
