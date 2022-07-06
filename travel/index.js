@@ -8,35 +8,30 @@ const bodyOpacity = document.querySelector('.body_opacity');
 
 (function () {
     burger.addEventListener('click', () => {
-        menu.classList.add('open_menu');
-        bodyOpacity.style.display = bodyOpacity.style.display === 'none' ? 'block' : 'none';
-        setTimeout(function () {
-            bodyOpacity.classList.add('body_opacity_active');
-          }, 50);   
+      menu.classList.add('open_menu');
+      bodyOpacity.classList.add('body_opacity_active');
     })
-    menuClose.addEventListener('click', () => {
-        setTimeout(function () {
-        bodyOpacity.classList.remove('body_opacity_active');
-          }, 50);  
-        menu.classList.remove('open_menu');
-        bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none';
+  /*burger.addEventListener('click', () => {
+      menu.classList.add('open_menu');
+      bodyOpacity.style.display = bodyOpacity.style.display === 'none' ? 'block' : 'none';
+      setTimeout(function () {
+          bodyOpacity.classList.add('body_opacity_active');
+        }, 50);   
+    })*/
+    menuClose.addEventListener('click', () => { 
+      menu.classList.remove('open_menu');
+      bodyOpacity.classList.remove('body_opacity_active');
     })
     navList.addEventListener('click', () => {
-        setTimeout(function () {
-            bodyOpacity.classList.remove('body_opacity_active');
-          }, 50);  
-        menu.classList.remove('open_menu');
-        bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none'; 
+      menu.classList.remove('open_menu');
+      bodyOpacity.classList.remove('body_opacity_active');
     })
 }());
 
 document.addEventListener('click', function(e){
     if(menu !== e.target){
-        setTimeout(function () {
-            bodyOpacity.classList.remove('body_opacity_active');
-          }, 50);  
         menu.classList.remove('open_menu');
-        bodyOpacity.style.display = bodyOpacity.style.display === 'block' ? 'none' : 'none';
+        bodyOpacity.classList.remove('body_opacity_active');
     }}, true);
 
 
