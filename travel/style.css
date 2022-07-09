@@ -335,6 +335,10 @@ body {
   height: 100px;
   background: #f2785c;
   border-radius: 16px;
+  padding: 28px 25px 27px 25px;
+}
+.st2 {
+  padding: 24px;
 }
 
 .steps_text {
@@ -927,7 +931,6 @@ body {
   .steps_icon {
     width: 70px;
     height: 70px;
-
     padding: 19px;
   }
   .ic1 {
