@@ -52,6 +52,7 @@
   <main class="main">
     <div class="container main-container">
       <section class="section section-preview" id="preview">
+        <div class="preview_wrapper">
         <div class="title_content">
           <h1 class="title">Explore the beauty of the World</h1>
           <p class="title2"><b>Receive personalized recommendations for countries, hotels, activities and more</b></p>
@@ -60,6 +61,7 @@
           <input type="text" id="plan" class="plan" placeholder="What would you like to do?">
           <button class="btn_plan"><span class="startplan">Start Planning</span></button>
         </form>
+        </div>
       </section>
       <section class="section section-steps" id="steps">
         <h2 class="section-title steps_title">3 STEPS TO THE PERFECT TRIP</h2>
@@ -96,23 +98,29 @@
         </div>
       </section>
       <section class="section section-destinations" id="destinations">
+        <div class="dest_wrapper">
         <h2 class="section-title dest_title">POPULAR DESTINATIONS</h2>
-        <div class="dest_photo">
-          <div class="dest_item1">
+        <div class="dest_photo_wrapper">
+          <div class = "dest_navigation_left"><img src="assets/svg/arrow_left.svg" class="dest_icon1" alt="arrow_left"></div>
+          <div class = "dest_navigation_right"><img src="assets/svg/arrow_right.svg" class="dest_icon2"  alt="arrow_right"></div>
+          <div class="dest_item item1">
+            <img src="assets/img/destination_1.jpg" class="dest_photo spain1" alt="spain-photo">
+            <img src="assets/img/destination_1_mobile.jpg" class="dest_photo spain2" alt="spain-photo">
             <p class="dest_text">SPAIN</p>
-            <p class="dest_text_mobile">SPAIN</p>
-            <div class = "dest_navigation">
-              <img src="assets/svg/arrow_left.svg" class="dest_icon1" alt="arrow_left">
-              <img src="assets/svg/arrow_right.svg" class="dest_icon2"  alt="arrow_right">
-            </div>
+
           </div>
-          <div class="dest_item2">
+          <div class="dest_item item2">
+            <img src="assets/img/destination_2.jpg" class="dest_photo japan1" alt="japan-photo">
+            <img src="assets/img/destination_2_mobile.jpg" class="dest_photo japan2" alt="japan-photo">
             <p class="dest_text">JAPAN</p>
           </div>
-          <div class="dest_item3">
+          <div class="dest_item item3">
+            <img src="assets/img/destination_3.jpg" class="dest_photo usa1" alt="usa-photo">
+            <img src="assets/img/destination_3_mobile.jpg" class="dest_photo usa2" alt="usa-photo">
             <p class="dest_text">USA</p>
           </div>
         </div>
+      </div>
         <div class="dest_bottom">
           <div class="slider_btn">
             <div class="slider slider_1"></div>
