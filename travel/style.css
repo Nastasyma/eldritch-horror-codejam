@@ -698,6 +698,13 @@ body {
     border-radius: 16px;
     margin-right: 10px;
     margin-bottom: 15px;
+    width: 30%;
+  }
+  .story {
+    justify-content: space-around;
+  }
+  .story_text_wrapp {
+    width: 65%;
   }
   .story_text {
     font-size: 16px;
@@ -753,6 +760,12 @@ body {
   .steps_text {
     font-size: 16px;
   }
+  .story_img_mobile {
+    width: 40%;
+  }
+  .story_text_wrapp {
+    width: 55%;
+  }
   .dest_text {
     font-size: 24px;
     bottom: 60px;
@@ -783,7 +796,7 @@ body {
     margin-top: 12px;
   }
   .story_title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
   }
   .footer_text {
@@ -825,6 +838,9 @@ body {
   }
   .text_hide {
     font-size: 12px;
+  }
+  .story_title {
+    font-size: 16px;
   }
   .startplan {
     font-size: 13px;
@@ -1092,6 +1108,10 @@ body {
   }
   .story_text_wrapp {
     margin-top: 5px;
+    width: 100%;
+  }
+  .story_img_mobile {
+    width: 50%;
   }
   .story {
     margin: 0 auto;
@@ -1152,7 +1172,7 @@ body {
   }
 
 }
-@media (max-width: 360px) {
+@media (max-width: 365px) {
   .text_hide {
     font-size: 7px;
   }
