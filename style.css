@@ -86,12 +86,12 @@ body:before {
 .card_close {
   background-image: url("assets/svg/close_menu.svg");
   background-position: center;
-  background-size: 30px;
+  background-size: 25px;
   position: absolute;
   left: 90%;
-  top: 10px;
-  width: 30px;
-  height: 30px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
   filter: invert(100%);
   cursor: pointer;
   transition: 0.2s;
@@ -212,13 +212,13 @@ body:before {
   border: 1px solid white;
 }
 .green {
-  background-color: green;
+  background-color: forestgreen;
 }
 .brown {
   background-color: orangered;
 }
 .blue {
-  background-color: blue;
+  background-color: mediumblue;
 }
 .cards_deck {
   background-image: url("assets/img/mythicCardBackground.jpg");
@@ -265,6 +265,11 @@ body:before {
     width: 277px;
     height: 360px;
   }
+  .card_close {
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
   .select_ancient {
     max-width: 10%;
     color: transparent;
@@ -300,6 +305,7 @@ body:before {
     height: 180px;
   }
   .card_close {
+    top: 10px;
     background-size: 15px;
     width: 15px;
     height: 15px;
