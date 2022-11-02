@@ -41,9 +41,11 @@ body:before {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  margin: auto;
   gap: 30px;
   min-width: 40%;
-  height: 100vh;
+  height: 70%;
   padding: 10px;
   padding-left: 20px;
   position: relative;
@@ -255,8 +257,15 @@ body:before {
   .cards_wrapper {
     min-width: 20%;
   }
+  .ancients_cards_wrapper {
+    height: 60%;
+  }
 }
 @media (max-width: 900px) {
+  .ancients_cards_wrapper {
+    height: 100%;
+    margin: 0;
+  }
   .card {
     width: 138px;
     height: 180px;
@@ -339,5 +348,6 @@ body:before {
   }
   .ancients_cards_wrapper {
     padding-left: 10px;
+    padding-right: 0;
   }
 }
